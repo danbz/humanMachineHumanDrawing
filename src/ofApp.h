@@ -5,6 +5,15 @@
 #include "ofxMarkovChain.h"
 #include "ofxTextSuite.h"
 
+/*
+Project Title: u-DrawMarkov
+Description: Markov Chain generator for line drawing instructions
+©Daniel Buzzo 2020
+dan@buzzo.com
+http://buzzo.com
+https://github.com/danbz
+*/
+
 class Mark {
     string markType;
     int state;

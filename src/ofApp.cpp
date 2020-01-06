@@ -1,5 +1,13 @@
 #include "ofApp.h"
 
+/*
+ Project Title:  u-DrawMarkov
+ Description: Markov Chain generator for line drawing instructions
+ ©Daniel Buzzo 2020
+ dan@buzzo.com
+ http://buzzo.com
+ https://github.com/danbz
+ */
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofSetVerticalSync(false);
@@ -23,7 +31,7 @@ void ofApp::setup(){
     ofSetColor(ofColor::black);
     
     // random list of conjunction phrases to include between drawing instructions, add empty quotes "" to decrease occurrence of phrases
-    conjunctions ={"then ", "then draw ", "and ", "follow with ", "followed by ", "add ", "adding ", "then add ", "continue with ", "next ", "next draw ", "", "", "", "", "",  "", "", "" };
+    conjunctions ={"then ", "then draw ", "and ", "follow with ", "followed by ", "add ", "adding ", "then add ", "continue with ", "next ", "next draw ", "", "", "", "", "",  "", "", "", "", "" };
     reset();
 }
 
@@ -43,19 +51,19 @@ void ofApp::draw(){
     int x = 0;
     int y = (ofGetHeight() /iconWidth) /2.0;
     for(vector<Mark>::iterator m = marks.begin(); m != marks.end(); ++m){
-        m->draw( x  * (iconWidth + gutter), y * (iconWidth + gutter), iconWidth, iconWidth);
+        m->draw( x  * (iconWidth + gutter) + gutter, y * (iconWidth + gutter), iconWidth, iconWidth);
         x++;
-        if (x * (iconWidth + gutter) > ofGetWidth()){
+        if (x * (iconWidth + gutter) > ofGetWidth() - gutter){
             x=0;
             y++;
             if (y * (iconWidth + gutter) > ofGetHeight() - iconWidth){
                 if (b_autoSteps){
                     b_autoSteps = false; // if we have filled half the screen height with drawing icons then stop autoadding steps
                     string speaker = "Oliver";
-                    string content = "and stop there" ;
+                    string content = "and stop there." ;
                     string cmd = "say " + content + " -v " + speaker;
                     system(cmd.c_str());
-                    instructions += "and stop there";
+                    instructions += "and stop there.";
                     instructionText.setText(instructions);
                 }
             }
