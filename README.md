@@ -15,6 +15,9 @@ http://buzzo.com
 
 ## controls
 
-* 'space': generate new drawing instruction from markov matrix
-* 'g': show / hide gui
-* 'f': toggle fullscreen
+* space: generate new drawing instruction from markov matrix
+* g: show / hide gui
+* f: toggle fullscreen
+* r: reset 
+
+![screenshot](u-DrawMarkov-Screenshot.png)
