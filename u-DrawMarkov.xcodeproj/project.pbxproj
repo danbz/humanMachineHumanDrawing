@@ -9,6 +9,86 @@
 		<string>46</string>
 		<key>objects</key>
 		<dict>
+			<key>6E2523F527C90D088A3F2062</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxTextSuite.h</string>
+				<key>path</key>
+				<string>../../../addons/ofxTextSuite/src/ofxTextSuite.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>9BC16030D23010D47C18C274</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxTextBlock.h</string>
+				<key>path</key>
+				<string>../../../addons/ofxTextSuite/src/ofxTextBlock.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>C45E851E0969285C22048D70</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>7A972F24487534EDCD9F65A5</string>
+					<string>9BC16030D23010D47C18C274</string>
+					<string>6E2523F527C90D088A3F2062</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>src</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>E7E250732F89FB84D5F7AC43</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>C45E851E0969285C22048D70</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>ofxTextSuite</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>0CFE4912BCFFB141DE9B56EA</key>
+			<dict>
+				<key>fileRef</key>
+				<string>7A972F24487534EDCD9F65A5</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>7A972F24487534EDCD9F65A5</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxTextBlock.cpp</string>
+				<key>path</key>
+				<string>../../../addons/ofxTextSuite/src/ofxTextBlock.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
 			<key>2E018CAB55EB03C96D1AF796</key>
 			<dict>
 				<key>explicitFileType</key>
@@ -732,6 +812,7 @@ fi
 						<string>src</string>
 						<string>../../../addons/ofxGui/src</string>
 						<string>../../../addons/ofxMarkovChain/src</string>
+						<string>../../../addons/ofxTextSuite/src</string>
 					</array>
 					<key>MACOSX_DEPLOYMENT_TARGET</key>
 					<string>10.9</string>
@@ -777,6 +858,7 @@ fi
 						<string>src</string>
 						<string>../../../addons/ofxGui/src</string>
 						<string>../../../addons/ofxMarkovChain/src</string>
+						<string>../../../addons/ofxTextSuite/src</string>
 					</array>
 					<key>ICON</key>
 					<string>$(ICON_NAME_RELEASE)</string>
@@ -814,6 +896,7 @@ fi
 				<array>
 					<string>480A780D8D0308AE4A368801</string>
 					<string>5BCE5F5441EBC876F256A9FA</string>
+					<string>E7E250732F89FB84D5F7AC43</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -3582,6 +3665,7 @@ fi
 						<string>src</string>
 						<string>../../../addons/ofxGui/src</string>
 						<string>../../../addons/ofxMarkovChain/src</string>
+						<string>../../../addons/ofxTextSuite/src</string>
 					</array>
 					<key>MACOSX_DEPLOYMENT_TARGET</key>
 					<string>10.9</string>
@@ -3647,6 +3731,7 @@ fi
 						<string>src</string>
 						<string>../../../addons/ofxGui/src</string>
 						<string>../../../addons/ofxMarkovChain/src</string>
+						<string>../../../addons/ofxTextSuite/src</string>
 					</array>
 					<key>MACOSX_DEPLOYMENT_TARGET</key>
 					<string>10.9</string>
@@ -3685,6 +3770,7 @@ fi
 					<string>1CD33E884D9E3358252E82A1</string>
 					<string>270688748A83111954789254</string>
 					<string>CDF5A6D0052B10F8DA491180</string>
+					<string>0CFE4912BCFFB141DE9B56EA</string>
 				</array>
 				<key>isa</key>
 				<string>PBXSourcesBuildPhase</string>
@@ -3787,6 +3873,7 @@ fi
 						<string>src</string>
 						<string>../../../addons/ofxGui/src</string>
 						<string>../../../addons/ofxMarkovChain/src</string>
+						<string>../../../addons/ofxTextSuite/src</string>
 					</array>
 					<key>ICON</key>
 					<string>$(ICON_NAME_DEBUG)</string>
@@ -3841,6 +3928,7 @@ fi
 						<string>src</string>
 						<string>../../../addons/ofxGui/src</string>
 						<string>../../../addons/ofxMarkovChain/src</string>
+						<string>../../../addons/ofxTextSuite/src</string>
 					</array>
 					<key>ICON</key>
 					<string>$(ICON_NAME_RELEASE)</string>

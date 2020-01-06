@@ -3,72 +3,75 @@
 #include "ofMain.h"
 #include "ofxGui.h"
 #include "ofxMarkovChain.h"
-
+#include "ofxTextSuite.h"
 
 class Mark {
-
-    ofPoint p;
-    float radius;
-    ofColor c;
-    string markType;
-    public:
-        Mark(int k){
-            switch(k){
-                case 1:
-                    c = ofColor(225, 20, 10, 200);
-                    markType = "lineup";
-                    break;
-                case 2:
-                    c = ofColor(10, 225, 20, 200);
-                    markType = "linedown";
-
-                    break;
-                case 3:
-                    c = ofColor(20, 10, 225, 200);
-                    markType = "lineleft";
-                    break;
-                default:
-                    break;
-            }
-            radius = ofRandom(10, 50);
-            //p.x = ofRandomWidth();
-            p.x = 10;
-            p.y = 0;
+        string markType;
+public:
+    Mark(int state){
+        switch(state){
+            case 0:
+                markType = "lineup";
+                break;
+                
+            case 1:
+                markType = "linedown";
+                break;
+                
+            case 2:
+                markType = "lineleft";
+                break;
+                
+            case 3:
+                markType = "lineright";
+                break;
+                
+            case 4:
+                markType = "arcup";
+                break;
+                
+            case 5:
+                markType = "arcdown";
+                break;
+                
+            case 6:
+                markType = "arcleft";
+                break;
+                
+            case 7:
+                markType = "arcright";
+                break;
+                
+            default:
+                break;
         }
-        void update(){
-            p.y += 3;
-        }
-        void draw(){
-            ofSetColor(255);
-            //ofDrawCircle(p, radius);
-            ofDrawBitmapString(markType, p.x, p.y);
-        }
-        bool isAlive(){
-            return (p.y - radius) < ofGetHeight();
-        }
+    }
     
-        string getMarkType(){
-            return markType;
-        }
+    string getMarkType(){
+        return markType;
+    }
 };
 
 class ofApp : public ofBaseApp{
-
-    int i;
+    
+public:
+    void setup();
+    void update();
+    void draw();
+    void keyPressed(int key);
+    void addDrawingStep();
+    
+    bool b_drawGui;
+    
     ofParameter<int> cycle;
-
+    
     ofxMC::MarkovChain markov;
-
+    
     ofxLabel fps;
     ofxPanel gui;
-
+    
     vector<Mark> marks;
     
-	public:
-		void setup();
-		void update();
-		void draw();
-
-		
-		
+    ofxTextBlock instructionText;
+    
 };
