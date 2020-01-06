@@ -5,7 +5,7 @@ void ofApp::setup(){
     ofSetVerticalSync(false);
     ofSetFrameRate(60);
     b_drawGui = true;
-    
+    iconWidth = 100;
     ofxMC::Matrix matrix("transitionMatrix.txt");
     markov.setup(matrix, 0);
     
@@ -15,26 +15,42 @@ void ofApp::setup(){
     
     instructionText.init("frabk.ttf", 20);
     instructionText.wrapTextX(ofGetWidth());
+    ofBackground(ofColor::white);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-//    if(++i > cycle){
-//          addDrawingStep();
-//    }
+    //    if(++i > cycle){
+    //          addDrawingStep();
+    //    }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofBackgroundGradient(ofColor(15, 16, 37), ofColor(11, 11, 10));
-   
+    
+    string instructions;
+    instructions =+ "Take a piece of paper and a pen and draw ";
+    int x = 0;
+    int y = (ofGetHeight() /iconWidth) /2.0;
+    for(vector<Mark>::iterator m = marks.begin(); m != marks.end(); ++m){
+        m->draw( x  * iconWidth, y * iconWidth, iconWidth, iconWidth);
+        instructions += m->getMarkType() += " ";
+        x++;
+        if (x * iconWidth > ofGetWidth()){
+            x=0;
+            y++;
+        }
+    }
+    
+    instructionText.setText(instructions);
+    
     if (b_drawGui){
         fps = ofToString(ofGetFrameRate());
         gui.draw();
         markov.draw(gui.getWidth() + 40, 20);
     }
     
-    ofSetColor(ofColor::white);
+    ofSetColor(ofColor::black);
     instructionText.wrapTextX(ofGetWidth()-10);
     // instructionText.wrapTextArea(ofGetWidth()-20, ofGetHeight()-20);
     instructionText.draw(10, 20);
@@ -53,6 +69,10 @@ void ofApp::keyPressed(int key){
             
         case 'g':
             b_drawGui = !b_drawGui;
+            
+        case 'r':
+            reset();
+            
         default:
             break;
     }
@@ -64,13 +84,11 @@ void ofApp::addDrawingStep(){
     markov.update();
     Mark newMark(markov.getState());
     marks.push_back(newMark);
-    
-    string instructions;
-    instructions =+ "draw a ";
-    for(vector<Mark>::iterator b = marks.begin(); b != marks.end(); ++b){
-        // b->draw();
-        instructions += b->getMarkType() += " ";
-    }
-    
-    instructionText.setText(instructions);
+}
+
+//--------------------------------------------------------------
+
+
+void ofApp::reset(){
+    marks.clear();
 }
