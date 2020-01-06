@@ -13,9 +13,11 @@ void ofApp::setup(){
     gui.add(cycle.set("Cycle", 15, 0, 90));
     gui.add(fps.setup("Fps:", ""));
     
-    instructionText.init("frabk.ttf", 20);
+    instructionText.init("frabk.ttf", 30);
     instructionText.wrapTextX(ofGetWidth());
     ofBackground(ofColor::white);
+    
+    reset();
 }
 
 //--------------------------------------------------------------
@@ -69,6 +71,7 @@ void ofApp::keyPressed(int key){
             
         case 'g':
             b_drawGui = !b_drawGui;
+            break;
             
         case 'r':
             reset();
@@ -84,6 +87,11 @@ void ofApp::addDrawingStep(){
     markov.update();
     Mark newMark(markov.getState());
     marks.push_back(newMark);
+    
+    string speaker = "Samantha";
+    string content = newMark.getMarkType() ;
+    string cmd = "say " + content + " -v " + speaker;
+    system(cmd.c_str());
 }
 
 //--------------------------------------------------------------
@@ -91,4 +99,8 @@ void ofApp::addDrawingStep(){
 
 void ofApp::reset(){
     marks.clear();
+    string speaker = "Samantha";
+    string content = "Take a piece of paper and a pen and draw " ;
+    string cmd = "say " + content + " -v " + speaker;
+    system(cmd.c_str());
 }

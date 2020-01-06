@@ -14,44 +14,44 @@ public:
     Mark(int state){
         switch(state){
             case 0:
-                markType = "a lineup";
+                markType = "a line up,";
                 markIcon.load("images/lineup.png");
                 break;
                 
             case 1:
-                markType = "a linedown";
+                markType = "a line down,";
                 markIcon.load("images/linedown.png");
                 break;
                 
             case 2:
-                markType = "a lineleft";
+                markType = "a line left,";
                 markIcon.load("images/lineleft.png");
                 break;
                 
             case 3:
-                markType = "a lineright";
+                markType = "a line right,";
                 markIcon.load("images/lineright.png");
                 break;
                 
             case 4:
-                markType = "an arcup";
+                markType = "an arc up,";
                 markIcon.load("images/arcup.png");
                 break;
                 
             case 5:
-                markType = "an arcdown";
+                markType = "an arc down,";
                 markIcon.load("images/arcdown.png");
                 
                 break;
                 
             case 6:
-                markType = "an arcleft";
+                markType = "an arc left,";
                 markIcon.load("images/arcleft.png");
                 
                 break;
                 
             case 7:
-                markType = "an arcright";
+                markType = "an arc right,";
                 markIcon.load("images/arcright.png");
                 
                 break;
