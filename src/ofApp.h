@@ -104,9 +104,14 @@ public:
     void addDrawingStep();
     void reset();
     
+    string instructions;
+    
+    vector<string> conjunctions;
     bool b_drawGui;
-    int iconWidth;
-    ofParameter<int> cycle;
+    int iconWidth, i, now, gutter;
+    ofParameter<int> speed;
+    ofParameter<bool> b_autoSteps;
+
     
     ofxMC::MarkovChain markov;
     
