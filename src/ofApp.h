@@ -41,20 +41,38 @@ public:
             case 5:
                 markType = "an arc down,";
                 markIcon.load("images/arcdown.png");
-                
                 break;
                 
             case 6:
                 markType = "an arc left,";
                 markIcon.load("images/arcleft.png");
-                
                 break;
                 
             case 7:
                 markType = "an arc right,";
                 markIcon.load("images/arcright.png");
-                
                 break;
+                
+            case 8:
+                markType = "a circle,";
+                markIcon.load("images/circle.png");
+                break;
+                
+            case 9:
+                markType = "a square,";
+                markIcon.load("images/square.png");
+                break;
+                
+            case 10:
+                markType = "a loop,";
+                markIcon.load("images/loop.png");
+                break;
+                
+            case 11:
+                markType = "a squiggle,";
+                markIcon.load("images/squiggle.png");
+                break;
+                
                 
             default:
                 break;

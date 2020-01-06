@@ -16,7 +16,7 @@ void ofApp::setup(){
     instructionText.init("frabk.ttf", 30);
     instructionText.wrapTextX(ofGetWidth());
     ofBackground(ofColor::white);
-    
+   
     reset();
 }
 
@@ -87,8 +87,8 @@ void ofApp::addDrawingStep(){
     markov.update();
     Mark newMark(markov.getState());
     marks.push_back(newMark);
-    
     string speaker = "Samantha";
+    
     string content = newMark.getMarkType() ;
     string cmd = "say " + content + " -v " + speaker;
     system(cmd.c_str());
