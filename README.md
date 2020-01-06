@@ -24,6 +24,7 @@ http://buzzo.com
 * g: show / hide gui
 * f: toggle fullscreen
 * r: reset
+* a: autogenerate new drawing steps, at rate of guiSlider 'Speed' 
 
 ![screenshot](u-DrawMarkov-Screenshot.png)
 
