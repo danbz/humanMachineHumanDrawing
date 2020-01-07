@@ -120,11 +120,9 @@ void ofApp::addDrawingStep(){
     Mark newMark(markov.getState());
     marks.push_back(newMark);
     
-    //for(vector<Mark>::iterator m = marks.begin(); m != marks.end(); ++m){
     if (marks.size() > 1) newConjunction =conjunctions[ofRandom(conjunctions.size())];
     instructions += newConjunction;
     instructions += newMark.getMarkType() += " ";
-    // }
     instructionText.setText(instructions);
     
     string speaker = "Oliver";

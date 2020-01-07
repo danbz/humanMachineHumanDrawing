@@ -82,7 +82,6 @@ public:
                 markIcon.load("images/squiggle.png");
                 break;
                 
-                
             default:
                 break;
         }
@@ -102,7 +101,6 @@ public:
     
 };
 
-
 class ofApp : public ofBaseApp{
     
 public:
@@ -120,7 +118,6 @@ public:
     int iconWidth, i, now, gutter;
     ofParameter<int> speed;
     ofParameter<bool> b_autoSteps;
-
     
     ofxMC::MarkovChain markov;
     
@@ -130,5 +127,4 @@ public:
     vector<Mark> marks;
     
     ofxTextBlock instructionText;
-    
 };
