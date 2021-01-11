@@ -13,12 +13,19 @@ The examples here also include a spreadsheet with illustrative probability matri
 
 code is C++ using the openFrameworks toolkit and uses Mac osX speech output announcing each new drawing step.
 
+
 ©2020, 2021 Dan Buzzo
 http://github.com/danbz
 http://youtube.com/danbuzzo
 http://buzzo.com
 
-## dependencies
+## Download Compiled version for OSX
+you can download a compiled version for Mac OSX 
+
+Human-Machine-Human-Drawing-mac-osx.zip
+
+
+## source code dependencies
 
 * ofxMarkovChain
 * ofxTextSuite
