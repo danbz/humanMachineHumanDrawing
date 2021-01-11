@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-               BuildableName = "u-DrawMarkov.app"
-               BlueprintName = "u-DrawMarkov"
-               ReferencedContainer = "container:u-DrawMarkov.xcodeproj">
+               BuildableName = "Human-Machine-Human Drawing.app"
+               BlueprintName = "Human-Machine-Human Drawing"
+               ReferencedContainer = "container:Human-Machine-Human Drawing.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,9 +31,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "u-DrawMarkov.app"
-            BlueprintName = "u-DrawMarkov"
-            ReferencedContainer = "container:u-DrawMarkov.xcodeproj">
+            BuildableName = "Human-Machine-Human Drawing.app"
+            BlueprintName = "Human-Machine-Human Drawing"
+            ReferencedContainer = "container:Human-Machine-Human Drawing.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -54,9 +54,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "u-DrawMarkov.app"
-            BlueprintName = "u-DrawMarkov"
-            ReferencedContainer = "container:u-DrawMarkov.xcodeproj">
+            BuildableName = "Human-Machine-Human Drawing.app"
+            BlueprintName = "Human-Machine-Human Drawing"
+            ReferencedContainer = "container:Human-Machine-Human Drawing.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "u-DrawMarkov.app"
-            BlueprintName = "u-DrawMarkov"
-            ReferencedContainer = "container:u-DrawMarkov.xcodeproj">
+            BuildableName = "Human-Machine-Human Drawing.app"
+            BlueprintName = "Human-Machine-Human Drawing"
+            ReferencedContainer = "container:Human-Machine-Human Drawing.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

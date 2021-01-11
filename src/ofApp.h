@@ -6,12 +6,14 @@
 #include "ofxTextSuite.h"
 
 /*
-Project Title: u-DrawMarkov
-Description: Markov Chain generator for line drawing instructions
-©Daniel Buzzo 2020
+Project Title: Human-Machine-Human Drawing
+Description: A collaborative markov chain based drawing instruction system
+©Daniel Buzzo 2020, 2021
 dan@buzzo.com
 http://buzzo.com
 https://github.com/danbz
+https://youtube.com/danbuzzo
+
 */
 
 class Mark {

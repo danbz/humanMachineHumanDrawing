@@ -31,6 +31,6 @@ http://buzzo.com
 * r: reset
 * a: autogenerate new drawing steps, at rate of guiSlider 'Speed' 
 
-![screenshot](u-DrawMarkov-Screenshot.png)
+![screenshot](Human-Machine-Human Drawing-Screenshot.png)
 
 ![screenshot](screenshot-probability-matrix.png)
