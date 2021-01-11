@@ -13,8 +13,9 @@ The examples here also include a spreadsheet with illustrative probability matri
 
 code is C++ using the openFrameworks toolkit and uses Mac osX speech output announcing each new drawing step.
 
-©2020 Dan Buzzo
-github.com/danbz
+©2020, 2021 Dan Buzzo
+http://github.com/danbz
+http://youtube.com/danbuzzo
 http://buzzo.com
 
 ## dependencies
