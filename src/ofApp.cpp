@@ -42,7 +42,7 @@ void ofApp::setup(){
     markov.setup(matrix, 0);
     
     gui.setup("Settings");
-    gui.add(speed.set("Speed (ms)", 4000, 0, 10000));
+    gui.add(speed.set("Speed (ms)", 3000, 0, 10000));
     gui.add(b_autoSteps.set("autoSteps",false));
     // gui.add(fps.setup("Fps:", ""));
     
@@ -164,5 +164,4 @@ void ofApp::reset(){
     instructions = "";
     instructions = "Take a piece of paper and a pen and draw\n";
     instructionText.setText(instructions);
-    
 }
